@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300; 400; 500; 600; 700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eca72fc79f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="formregistro.css">
+    <title>Inicio de Sesión Bookloop</title>
+</head>
+<body>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Inicia sesión para seguir intercambiando libros y descubriendo nuevas lecturas.</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una Cuenta</h2>
+                <div class="icons">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <p>O completa tu registro con Gmail</p>
+                <form class="form" action="#">
+                    <label> 
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Nombre Completo">
+                    </label>
+                    <label>
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Correo Electrónico">
+                    </label> 
+                    <label>
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Registrarse">
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>¡Bienvenido nuevamente!</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aquí</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <p>Iniciar sesión con una cuenta</p>
+                <form class="form" action="#">
+                    <label>
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Correo Electrónico">
+                    </label> 
+                    <label>
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Iniciar Sesión">
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+<script src="formregistro.js"></script>
+</body>
+</html>

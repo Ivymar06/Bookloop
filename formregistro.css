@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(img/pexels-pixabay-159866.jpg);
+    background-size: cover;
+}
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 1);
+    transition: all ease;
+    max-width: 900px;
+    height: 500px;
+    margin: 10px;
+}
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 1);
+    transition: all 0.5s ease; /* Transición suave */
+    max-width: 900px;
+    height: 500px; /* Asegúrate de que ambos contenedores tengan la misma altura */
+    margin: 10px; 
+}
+
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #D4A373;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+.info-childs p {
+    margin: 15px 0;
+    color: #555;
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #FAEDCD;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #FAEDCD;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.info-childs input:hover{
+    background-color: #FAEDCD;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: #FAEDCD;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-information-childs {
+    padding: 0 30px;
+}
+
+.form-information-childs h2{
+    color: #333;
+    font-size: 2rem;
+}
+
+.form-information-childs p{
+    color: #555;
+}
+
+.icons {
+    margin: 15px 0;
+}
+
+.icons i {
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: solid thin #D4A373;
+    color:#D4A373;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.icons i:hover{
+    background-color: #FAEDCD;
+    color: #fff;
+}
+
+.form{
+    margin: 30px 0 0 0;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+.form label i {
+    color:#D4A373;
+}
+
+.form input[type="submit"] {
+    background-color: #FAEDCD;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.form input[type="submit"]:hover {
+    background-color:#D4A373;
+}
+
+.hide {
+    display: none;
+    position:absolute;
+    transform: translateY(-300%);
+}
+
+/*Responsive form*/
+
+@media screen and (max-width:750px ) {
+    html { 
+        font-size: 12px;
+    } 
+}
+
+@media screen and (max-width:580px ) {
+    html { 
+        font-size: 10px;
+    } 
+    
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .information {
+        flex-grow: 1;
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .form-information{
+        flex-grow: 1;
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+}
+
+.slide-up {
+    transform: translateY(-100%); /* Mueve el contenedor hacia arriba */
+    transition: transform 0.5s ease;}
+
+
+
